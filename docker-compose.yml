@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+#    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+
+  # every service will have it's own level
+  # 当我们提到将容器的端口映射到宿主机的端口时，我们是在说将容器内部的服务暴露到运行容器的物理或逻辑机器上，从而允许外部访问。
+  #
+  #简而言之，宿主机是物理或逻辑环境，用于运行虚拟化或容器化的实例，为它们提供所需的资源。
+
+
+
+
+
+
